@@ -1,0 +1,2 @@
+Error: invalid arguments count
+Usage: triangle.exe <sideA> <sideB> <sideC>
