@@ -18,7 +18,7 @@ if not errorlevel 1 goto err
 fc output.txt fail.txt
 if errorlevel 1 goto err
 
-REM Проверка на запуск программы 
+REM Проверка на запуск программы с некорректными сторонами 
 %PROGRAM% a b c > output.txt
 if not errorlevel 1 goto err
 
@@ -28,7 +28,7 @@ if not errorlevel 1 goto err
 fc output.txt fail.txt
 if errorlevel 1 goto err
 
-REM Проверка на запуск программы без указания сторон
+REM Проверка на запуск программы с некорректными сторонами
 %PROGRAM% a 3 c > output.txt
 if not errorlevel 1 goto err
 
